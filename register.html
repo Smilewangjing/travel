@@ -1,0 +1,102 @@
+<!doctype>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>注册炫岛旅游</title>
+		<link type="text/css" rel="stylesheet" href="style/register.css"/>
+	</head>
+	<body>
+		<header id="reg_head">
+			<div class="logo">
+				<hgroup>
+					<h1 class="reg_logo"><img src="images/logo3.png" height="100" /></h1>
+					<h2>欢迎注册</h2>
+				</hgroup>
+			</div>
+			<div class="text">
+				<p>已有炫岛账号？<mark>登录</mark></p>
+			</div>
+		</header>
+		<div id="line">
+			<ul>
+				<li></li>
+				<li style="border-top:2px solid #50b400">
+					<em style="background:#50b400;">1</em>
+					<p style="color:#50b400;">填写注册信息</p>
+				</li>
+				<li>
+					<em>2</em>
+					<p>接受并填写验证码</p>
+				</li>
+				<li>
+					<em>V</em>
+					<p>注册成功</p>
+				</li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="myform">
+			<form method="post" action="">
+				<label>
+					<i>*&nbsp;&nbsp;</i>手机号码　
+					<input type="text" name="phonenum" class="_inp"/>
+					<em class="phone"style="background:url(images/reg.png) no-repeat -863px -195px"></em>
+				</label><br/>
+				<label>
+					<i>*&nbsp;&nbsp;</i>登录密码　
+					<input type="password" name="loginpass" class="_inp"/>
+					
+					<em class="pass"style="width:16px;height:18px;background:url(images/reg.png) no-repeat -906px -196px"></em>
+				</label>
+				<span style="color:#999;font-size:14px;">6-18位，区分大小写，字母、数字、特殊符号中的两种或以上</span>
+				<div class="anquan">安全程度：
+					<ul>
+						<li>弱</li>
+						<li>中</li>
+						<li>强</li>
+					</ul>
+				</div><br/>
+				<label>
+					<i>*&nbsp;&nbsp;</i>确认密码　
+					<input type="password" name="querenpass" class="_inp"/>
+					<em class="pass" style="width:16px;height:18px;background:url(images/reg.png) no-repeat -906px -196px"></em>
+				</label><br/>
+				<label>
+					<span style="margin-left:-16px"><i>*&nbsp;&nbsp;</i>图形验证码　</span>
+					<input type="text" name="imageyanzheng" class="_inp" style="width:105px"/>
+				</label>
+				<span class="yzm">
+					<em class="_img"></em>
+					<em class="_text">换一张</em>
+				</span><br/>
+				<label class="checkbox"><em></em>我有炫岛旅游合作联名卡</label>
+				<div class="checkcard">
+					<p class="cardname">
+						<span>卡名称</span>　
+						<select>
+							<option value="0">请选择联名卡</option>
+							<option value="1">农行-金穗炫岛旅游贵宾金卡</option>
+							<option value="2">中信银行-炫岛旅游联名信用卡</option>
+							<option value="3">邮储银行－炫岛旅游信用卡</option>
+							<option value="4">建行-炫岛龙卡联名信用卡</option>
+							<option value="5">工商银行-炫岛旅游联名信用卡</option>
+							<option value="6">招商银行-炫岛联名卡</option>
+						</select>
+					</p>
+					<label>
+						<i>*&nbsp;&nbsp;</i>联名会员号　
+						<input type="password" name="loginpass" class="_inp"/>
+						<em class="pass"style="width:16px;height:18px;"></em>
+					</label>
+					<span style="color:#999;font-size:14px;">请输入11位联名会员号</span>
+				</div>
+				<label class="checkbox"><em></em>我已阅读并同意<a href="javascript:;">《炫岛旅游服务条款》</a></label>
+				<div class="btn">同意服务条款并注册</div>
+			</form>
+		</div>
+		<footer id="reg_foot">
+			<p>Copyright © LVYOU 炫岛终极旅行社 备152606160号</p>
+			<p>闽ICP 旅行社经营许可证：DB-SDG-1850</p>
+		</footer>
+	</body>
+</html>

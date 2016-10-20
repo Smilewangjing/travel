@@ -1,0 +1,57 @@
+#content .con_left figure.fjxs{
+	border:1px solid #ccc;
+	padding:4px;
+	float:left;
+	margin:15px 5px 12px 0;
+	border-radius:4px;
+	position:relative;
+}
+#content .con_left figure figcaption{
+	text-align:center;
+	padding:5px;
+	position:relative;
+
+}
+#content .con_left .more{
+	width:200px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	margin:30px auto;
+	border:1px solid #ccc;
+	border-radius:10px;
+	background:#fafafa;
+	cursor:pointer;
+	font-size:18px;
+	color:#f00;
+	clear:both;
+}
+
+#content .con_left figure.fjxs img{
+	vertical-align:middle;
+	position:relative;
+}
+#content .con_left figure.fjxs .hidden{
+	position:absolute;
+	left:4px;
+	top:4px;
+	width:435px;
+	height:280px;
+	overflow:hidden;
+	z-index:-10;
+}
+#content .con_left figure.fjxs .fj_bu{
+	position:absolute;
+	left:0;
+	top:280px;
+	width:435px;
+	height:280px;
+	padding:30px;
+	box-sizing:border-box;
+	background:rgba(0,0,0,0.4);
+}
+#content .con_left figure.fjxs .fj_bu p{
+	color:#f5f5f5;
+	margin:10px 0;
+	width:90%;
+}

@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>终极旅游之--机票订购</title>
+		<script type="text/javascript" src="js/jquery.js"></script>	
+		<link type="text/css" rel="stylesheet" href="style/public.css"/>
+		<link type="text/css" rel="stylesheet" href="style/style2.css"/>
+		<link type="text/css" rel="stylesheet" href="style/style3.css"/>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="top">
+			<div class="center-top">
+				<ul class="top-left">
+					<li>您好，欢迎光临</li>
+					<li><a href="javascript:;"><span style="color:red;">登录</span>&nbsp;&nbsp;&nbsp;|</a></li>
+					<li><a href="javascript:;" style="margin-left:-10px">注册</a></li>
+				</ul>
+				<ul class="top-right">
+					<li>
+						<a href="javascript:;"><img src="images/top_red.gif" /></a>
+					</li>
+					<li>
+						<a href="javascript:;">我的乐途
+							<span class="bg_img"></span>
+							<div class="aft"></div>
+							<div class="top_menu" style="width:210px;letter-spacing:1.5px">
+								<h3></h3>
+								<i style="margin:20px 0 0 0;">你好，请<strong style="color:#0f4">登陆</strong></i>
+								<div style="margin:0 0 -12px 20px"><span style="padding:0 20px 0 0;border-right:1px solid #ccc">我的订单</span><span style="padding:0 0 0 20px">我的信息</span></div>
+								<div style="margin:0 0 0 20px"><span style="padding:0 20px 0 0;border-right:1px solid #ccc">我的收藏</span><span style="padding:0 0 0 20px">会员专享</span></div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="bg_phone"></span>
+							手机同城
+							<span class="bg_img"></span>
+							<div class="aft"></div>
+							<div class="top_menu" style="width:150px;background:#fafafa url(images/top_mobile_ewm.png) no-repeat 35px 50px">
+								<span style="display:block;text-align:center">扫描下载</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">微信
+							<span class="bg_img"></span>
+							<div class="aft"></div>
+							<div class="top_menu" style="width:315px;background:url(images/top_bg.png) no-repeat 0 -134px">
+								
+							</div>
+						</a>
+						
+					</li>
+					<li>
+						<a href="javascript:;">电话
+							<span class="bg_img"></span>
+							<div class="aft"></div>
+							<div class="top_menu" style="width:230px;left:-233px">
+								<p>国内电话：4008-502-136</p>
+								<p>海外电话：+86-875-6003-9610</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">客户服务
+							<span class="bg_img"></span>
+							<div class="aft"></div>
+							<div class="top_menu">
+								<p>帮助中心</p>
+								<p>在线客服</p>
+								<p>人工申诉</p>
+								<p>旅游顾问</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">合作中心
+							<span class="bg_img"></span>
+							<div class="aft"></div>
+							<div class="top_menu">
+								<p>联盟合作</p>
+								<p>商务合作</p>
+								<p>门票合作</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="top2">
+			<div class="center-top2">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+		</div>
+		<header id="header">
+			<div class="head_cen">
+				<h1 class="logo"><img src="images/logo3.png"/></h1>
+				<nav class="link">
+					<h2 style="display:none">网站导航</h2>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="infor.html">旅游咨询</a></li>
+						<li class="active"><a href="ticket.html">机票预订</a></li>
+						<li><a href="fengjing.html">风景图片</a></li>
+						<li><a href="jianjie.html">公司简介</a></li>
+						<li><a href="guoneiyou.html">国内游</a></li>
+						<li><a href="javascript:;">活动</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="head_img" style="background:linear-gradient(to right bottom,rgba(0,0,0,0.4),rgba(0,0,0,0)),url(images/0032.jpg) no-repeat center;">
+			<div class="center">
+				<hgroup>
+					<h2>票务查询</h2>
+					<h3>包括周边短线游、国内长线、出境游、线路行程等等</h3>
+				</hgroup>
+			</div>
+		</div>
+		<div id="img_xiaoguo">
+			<div class="jipiao_lb">
+				<div class="left_gnjp">
+					<div class="gnjp">国内机票</div>
+					<div class="white_bj">
+						<div class="leixing">
+							<span style="border-bottom:2px solid #05d987;">单程</span><span>往返</span><span>联程</span>
+						</div>
+						<div class="form"style="display:block;">			
+							<form name="form1" method="get" action="">
+								<label>出发城市　 <input type="text"placeholder="城市名" /></label>
+								<label>到达城市　 <input type="text"placeholder="城市名" /></label>
+								<label>出发时间　 <input type="text"placeholder="时间/日期" /></label>
+								<label style="color:#bbb">返回时间　 <input type="text"placeholder="时间/日期" /></label>
+								<div class="btn">搜索</div>
+							</form>
+						</div>
+						<div class="form">			
+							<form name="form1" method="get" action="">
+								<label>出发城市　 <input type="text"placeholder="城市名" /></label>
+								<label>到达城市　 <input type="text"placeholder="城市名" /></label>
+								<label>出发时间　 <input type="text"placeholder="时间/日期" /></label>
+								<label>返回时间　 <input type="text"placeholder="时间/日期" /></label>
+								<div class="btn">搜索</div>
+							</form>
+						</div>
+						<div class="form">			
+							<form name="form1" method="get" action="">
+								<label>出发城市　 <input type="text"placeholder="城市名" /></label>
+								<label>中转城市　 <input type="text"placeholder="城市名" /></label>
+								<label>到达城市　 <input type="text"placeholder="城市名" /></label>
+								<label>出发时间　 <input type="text"placeholder="时间/日期" /></label>
+								<label>中转时间　 <input type="text"placeholder="时间/日期" /></label>
+								<div class="btn">搜索</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="right_lb">
+					<ul class="img_list">
+						<li><img src="images/showImg1.jpg" width="800" height="350"/></li>
+						<li><img src="images/showImg2.png" width="800" height="350"/></li>
+						<li><img src="images/showImg3.jpg" width="800" height="350"/></li>
+						<li><img src="images/showImg4.jpg" width="800" height="350"/></li>
+						<li><img src="images/showImg5.jpg" width="800" height="350"/></li>
+						<li><img src="images/showImg6.jpg" width="800" height="350"/></li>
+					</ul>
+					<ol class="num_btn">
+						<li style="font-weight:bold;background:#f60">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ol>
+					<div class="jiantou_btn">
+						<div class="prev"></div>
+						<div class="next"></div>
+					</div>
+				</div>
+			</div>
+			<div class="img-xiaoguo">
+				<p><span style ="color:blue">登录</span> 展示你的个性化内容</p>
+				<ul>
+					<li style="left:0px"><img src="images/20150120_ifold1.jpg"/><div class="bu"></div></li>
+					<li style="left:180px"><img src="images/20150120_ifold2.jpg"/><div class="bu"></div></li>
+					<li style="left:360px"><img src="images/20150120_ifold3.jpg"/><div class="bu"></div></li>
+					<li style="left:540px"><img src="images/20150120_ifold4.jpg"/><div class="bu"></div></li>
+					<li style="left:720px"><img src="images/20150120_ifold5.jpg"/><div class="bu"></div></li>
+					<li style="left:900px"><img src="images/20150120_ifold6.jpg"/><div class="bu"></div></li>
+					<li style="left:1080px"><img src="images/20150120_ifold7.jpg"/><div class="bu"></div></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div class="con_left ticket">
+				<form action="" method="">
+					<h2> 机票预订</h2>
+					<div class="leixing">
+						<p>航班类型<mark>单程</mark>往返</p>
+					</div>
+					<div class="_left">
+						<p>
+							<label>出发城市</label>
+							<input type="text" name="from" placeholder="城市名"/>
+						</p>
+						<p>
+							<label>返回城市</label>
+							<input type="text" name="to" placeholder="城市名"/>
+						</p>
+					</div>
+					<div class="_right">
+						<p>
+							<label>出发时间</label>
+							<input type="text" name="from" placeholder="时间/日期"/>
+						</p>
+						<p>
+							<label>返回时间</label>
+							<input type="text" name="to" placeholder="时间/日期"/>
+						</p>
+					</div>
+					<div class="_btn">订票</div>
+				</form>
+				<div class="new">
+					<h2>最新机票</h2>
+					<label>热门城市：</label>
+					<ul>
+						<li style="color:red" class="goto">北京</li>
+						<li>上海</li>
+						<li>广州</li>
+						<li>深圳</li>
+						<li>重庆</li>
+						<li>厦门</li>
+						<li>杭州</li>
+						<li>南京</li>
+					</ul>
+					<div class="hangban">
+						<div class="list">
+						
+						<table style="display:block;opacity:1">
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>北京-上海</td>
+									<td>11-17</td>
+									<td>￥758</td>
+									<td>￥56</td>
+									<td>无</td>
+									<td>春秋航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-广州</td>
+									<td>11-18</td>
+									<td>￥635</td>
+									<td>￥50</td>
+									<td>有</td>
+									<td>首都航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-深圳</td>
+									<td>11-21</td>
+									<td>￥562</td>
+									<td>￥60</td>
+									<td>有</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-重庆</td>
+									<td>11-19</td>
+									<td>￥428</td>
+									<td>￥65</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-杭州</td>
+									<td>11-15</td>
+									<td>￥458</td>
+									<td>￥46</td>
+									<td>无</td>
+									<td>天津航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-厦门</td>
+									<td>11-18</td>
+									<td>￥898</td>
+									<td>￥72</td>
+									<td>有</td>
+									<td>深圳航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-南京</td>
+									<td>11-27</td>
+									<td>￥587</td>
+									<td>￥66</td>
+									<td>无</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-成都</td>
+									<td>11-14</td>
+									<td>￥659</td>
+									<td>￥76</td>
+									<td>有</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>北京-三亚</td>
+									<td>11-20</td>
+									<td>￥813</td>
+									<td>￥87</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>上海-北京</td>
+									<td>11-17</td>
+									<td>￥758</td>
+									<td>￥56</td>
+									<td>无</td>
+									<td>春秋航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-广州</td>
+									<td>11-16</td>
+									<td>￥585</td>
+									<td>￥57</td>
+									<td>无</td>
+									<td>南方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-深圳</td>
+									<td>11-11</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-重庆</td>
+									<td>11-24</td>
+									<td>￥874</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-杭州</td>
+									<td>11-25</td>
+									<td>￥477</td>
+									<td>￥56</td>
+									<td>有</td>
+									<td>天津航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-厦门</td>
+									<td>11-21</td>
+									<td>￥758</td>
+									<td>￥45</td>
+									<td>有</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-南京</td>
+									<td>11-17</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>南京航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-成都</td>
+									<td>11-17</td>
+									<td>￥594</td>
+									<td>￥45</td>
+									<td>无</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>上海-三亚</td>
+									<td>11-21</td>
+									<td>￥854</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>广州-北京</td>
+									<td>11-27</td>
+									<td>￥745</td>
+									<td>￥35</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-上海</td>
+									<td>11-25</td>
+									<td>￥785</td>
+									<td>￥46</td>
+									<td>有</td>
+									<td>北京航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-深圳</td>
+									<td>11-17</td>
+									<td>￥965</td>
+									<td>￥74</td>
+									<td>无</td>
+									<td>南方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-重庆</td>
+									<td>11-18</td>
+									<td>￥745</td>
+									<td>￥84</td>
+									<td>无</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-杭州</td>
+									<td>11-14</td>
+									<td>￥874</td>
+									<td>￥58</td>
+									<td>有</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-厦门</td>
+									<td>11-19</td>
+									<td>￥845</td>
+									<td>￥75</td>
+									<td>无</td>
+									<td>广州航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-南京</td>
+									<td>11-25</td>
+									<td>￥545</td>
+									<td>￥87</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-成都</td>
+									<td>11-23</td>
+									<td>￥578</td>
+									<td>￥94</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>广州-三亚</td>
+									<td>11-17</td>
+									<td>￥876</td>
+									<td>￥51</td>
+									<td>无</td>
+									<td>华东航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>深圳-北京</td>
+									<td>11-21</td>
+									<td>￥657</td>
+									<td>￥45</td>
+									<td>有</td>
+									<td>上海航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-广州</td>
+									<td>11-21</td>
+									<td>￥658</td>
+									<td>￥60</td>
+									<td>无</td>
+									<td>华南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-上海</td>
+									<td>11-15</td>
+									<td>￥658</td>
+									<td>￥52</td>
+									<td>无</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-重庆</td>
+									<td>11-13</td>
+									<td>￥748</td>
+									<td>￥49</td>
+									<td>有</td>
+									<td>华北航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-杭州</td>
+									<td>11-22</td>
+									<td>￥854</td>
+									<td>￥63</td>
+									<td>有</td>
+									<td>深圳航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-厦门</td>
+									<td>11-18</td>
+									<td>￥475</td>
+									<td>￥65</td>
+									<td>无</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-南京</td>
+									<td>11-18</td>
+									<td>￥658</td>
+									<td>￥57</td>
+									<td>有</td>
+									<td>华东航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-成都</td>
+									<td>11-19</td>
+									<td>￥563</td>
+									<td>￥98</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>深圳-三亚</td>
+									<td>11-28</td>
+									<td>￥970</td>
+									<td>￥36</td>
+									<td>无</td>
+									<td>华南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>重庆-北京</td>
+									<td>11-17</td>
+									<td>￥758</td>
+									<td>￥56</td>
+									<td>无</td>
+									<td>春秋航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-广州</td>
+									<td>11-16</td>
+									<td>￥585</td>
+									<td>￥57</td>
+									<td>无</td>
+									<td>南方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-深圳</td>
+									<td>11-11</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-上海</td>
+									<td>11-24</td>
+									<td>￥874</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-杭州</td>
+									<td>11-25</td>
+									<td>￥477</td>
+									<td>￥56</td>
+									<td>有</td>
+									<td>天津航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-厦门</td>
+									<td>11-21</td>
+									<td>￥758</td>
+									<td>￥45</td>
+									<td>有</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-南京</td>
+									<td>11-17</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>南京航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-成都</td>
+									<td>11-17</td>
+									<td>￥594</td>
+									<td>￥45</td>
+									<td>无</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>重庆-三亚</td>
+									<td>11-21</td>
+									<td>￥854</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>厦门-北京</td>
+									<td>11-17</td>
+									<td>￥758</td>
+									<td>￥56</td>
+									<td>无</td>
+									<td>春秋航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-广州</td>
+									<td>11-16</td>
+									<td>￥585</td>
+									<td>￥57</td>
+									<td>无</td>
+									<td>南方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-深圳</td>
+									<td>11-11</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-重庆</td>
+									<td>11-24</td>
+									<td>￥874</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-杭州</td>
+									<td>11-25</td>
+									<td>￥477</td>
+									<td>￥56</td>
+									<td>有</td>
+									<td>天津航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-上海</td>
+									<td>11-21</td>
+									<td>￥758</td>
+									<td>￥45</td>
+									<td>有</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-南京</td>
+									<td>11-17</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>南京航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-成都</td>
+									<td>11-17</td>
+									<td>￥594</td>
+									<td>￥45</td>
+									<td>无</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>厦门-三亚</td>
+									<td>11-21</td>
+									<td>￥854</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>杭州-北京</td>
+									<td>11-17</td>
+									<td>￥758</td>
+									<td>￥56</td>
+									<td>无</td>
+									<td>春秋航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-广州</td>
+									<td>11-16</td>
+									<td>￥585</td>
+									<td>￥57</td>
+									<td>无</td>
+									<td>南方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-深圳</td>
+									<td>11-11</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-重庆</td>
+									<td>11-24</td>
+									<td>￥874</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-上海</td>
+									<td>11-25</td>
+									<td>￥477</td>
+									<td>￥56</td>
+									<td>有</td>
+									<td>天津航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-厦门</td>
+									<td>11-21</td>
+									<td>￥758</td>
+									<td>￥45</td>
+									<td>有</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-南京</td>
+									<td>11-17</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>南京航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-成都</td>
+									<td>11-17</td>
+									<td>￥594</td>
+									<td>￥45</td>
+									<td>无</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>杭州-三亚</td>
+									<td>11-21</td>
+									<td>￥854</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<thead>
+								<tr>
+									<td>路线</td>
+									<td>日期</td>
+									<td>价格</td>
+									<td>税费</td>
+									<td>餐饮</td>
+									<td>航班</td>
+									<td>预订</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>南京-北京</td>
+									<td>11-17</td>
+									<td>￥758</td>
+									<td>￥56</td>
+									<td>无</td>
+									<td>春秋航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-广州</td>
+									<td>11-16</td>
+									<td>￥585</td>
+									<td>￥57</td>
+									<td>无</td>
+									<td>南方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-深圳</td>
+									<td>11-11</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东方航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-重庆</td>
+									<td>11-24</td>
+									<td>￥874</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>西部航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-上海</td>
+									<td>11-25</td>
+									<td>￥477</td>
+									<td>￥56</td>
+									<td>有</td>
+									<td>天津航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-厦门</td>
+									<td>11-21</td>
+									<td>￥758</td>
+									<td>￥45</td>
+									<td>有</td>
+									<td>厦门航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-上海</td>
+									<td>11-17</td>
+									<td>￥754</td>
+									<td>￥54</td>
+									<td>无</td>
+									<td>南京航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-成都</td>
+									<td>11-17</td>
+									<td>￥594</td>
+									<td>￥45</td>
+									<td>无</td>
+									<td>四川航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td>南京-三亚</td>
+									<td>11-21</td>
+									<td>￥854</td>
+									<td>￥54</td>
+									<td>有</td>
+									<td>东南航班</td>
+									<td><span>预订</span></td>
+								</tr>
+								<tr>
+									<td colspan="7">加载更多航班...</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<aside class="con_right">
+				<div class="pub jdtj">
+					<h2>景点推荐</h2>
+					<div class="list">
+						<ul>
+							<li><a href="javascript:void(0)">曼谷(12)</a></li>
+							<li><a href="javascript:void(0)">东京(5)</a></li>
+							<li><a href="javascript:void(0)">西双版纳(8)</a></li>
+							<li><a href="javascript:void(0)">漓江(16)</a></li>
+							<li><a href="javascript:void(0)">呼伦贝尔(4)</a></li>
+							<li><a href="javascript:void(0)">首尔(9)</a></li>
+							<li><a href="javascript:void(0)">巴厘岛(15)</a></li>
+							<li><a href="javascript:void(0)">土耳其(22)</a></li>
+							<li><a href="javascript:void(0)">夏威夷(5)</a></li>
+							<li><a href="javascript:void(0)">香港(11)</a></li>
+							<li><a href="javascript:void(0)">毛里求斯(7)</a></li>
+							<li><a href="javascript:void(0)">吉普岛(4)</a></li>
+							<li><a href="javascript:void(0)">西纳(18)</a></li>
+							<li><a href="javascript:void(0)">法瑞意(8)</a></li>
+							<li><a href="javascript:void(0)">马尔代夫(9)</a></li>
+							<li><a href="javascript:void(0)">新西兰(16)</a></li>
+							<li><a href="javascript:void(0)">埃及(11)</a></li>
+							<li><a href="javascript:void(0)">迪拜(14)</a></li>
+							<li><a href="javascript:void(0)">犀利兰卡(7)</a></li>
+							<li><a href="javascript:void(0)">麦哈顿(3)</a></li>
+							<li><a href="javascript:void(0)">大阪(15)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="pub rmly">
+					<h2>热门旅游</h2>
+					<div class="aside_img">
+						<figure>
+							<img src="images/aside1.jpg"/>
+							<figcaption>曼谷-芭提雅6日游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside2.jpg"/>
+							<figcaption>马尔代夫双鱼6日游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside3.jpg"/>
+							<figcaption>海南双飞5日游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside4.jpg"/>
+							<figcaption>富山大阪东京8日游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside5.jpg"/>
+							<figcaption>法瑞意德12日游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside6.jpg"/>
+							<figcaption>巴厘岛6日半游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside7.jpg"/>
+							<figcaption>塞舌尔迪拜9日游</figcaption>
+						</figure>
+						<figure>
+							<img src="images/aside8.jpg"/>
+							<figcaption>花样土耳其10日游</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="pub lybbx">
+					<h2>旅游百宝箱</h2>
+					<div class="check">
+						<ul>
+							<li><a href="javascript:void(0)">天气预报</a></li>
+							<li><a href="javascript:void(0)">火车票查询</a></li>
+							<li><a href="javascript:void(0)">航空查询</a></li>
+							<li><a href="javascript:void(0)">地铁线路查询</a></li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</div>
+		<!--<div id="saoyisao"><img src="images/saoyisao.png"/></div>
+		<div id="saoyisao_hid"><div class="image"><img class="img_close" src="images/btn_close.png"/><img class="img_fixed" src="images/fixed.png"/></div></div>-->
+		<div id="goujipiao"></div>
+		<div id="haoli"><div class="center"><div class="close"></div></div></div>
+		<footer id="foot">
+			<div class="top">
+				<div class="pub t_left">
+					<h2>合作伙伴</h2>
+					<hr/>
+					<ul>
+						<li><a href="javascript:void(0)">途牛旅游网</a></li>
+						<li><a href="javascript:void(0)">驴麻麻旅游网</a></li>
+						<li><a href="javascript:void(0)">携程旅行</a></li>
+						<li><a href="javascript:void(0)">中国青年旅行社</a></li>
+					</ul>
+				</div>
+				<div class="pub t_center">
+					<h2>旅游FAQ</h2>
+					<hr/>
+					<ul>
+						<li><a href="javascript:void(0)">旅游合同签订方式？</a></li>
+						<li><a href="javascript:void(0)">儿童价是基于什么方式制定的？</a></li>
+						<li><a href="javascript:void(0)">旅行的线路品质是怎么界定的？</a></li>
+						<li><a href="javascript:void(0)">单房差是什么？</a></li>
+						<li><a href="javascript:void(0)">旅游保险有哪些种类？</a></li>
+					</ul>
+				</div>
+				<div class="pub t_right">
+					<h2>联系方式</h2>
+					<hr/>
+					<ul>
+						<li>扣扣：888111888</li>
+						<li>邮箱：888111888@qq.com</li>
+						<li>地址：福建省泉州市</li>
+						<li>电话：15555555555</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">Copyright © LVYOU 终极旅行社 闽ICP 备152606160号|旅行社经营许可证：DB-SDG-1850</div>
+		</footer>
+		<div id="fix-right-bot"></div>
+	</body>
+</html>
+

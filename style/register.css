@@ -1,0 +1,216 @@
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,p{
+	margin:0;
+	padding:0;
+	font-family:microsoft yahei;
+	color:#666;
+}
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#reg_head{
+	width:1263px;
+	height:150px;
+	margin:0 auto;
+}
+#reg_head .logo{
+	float:left;
+	margin:25px 0 0 0;
+}
+#reg_head .text{
+	float:right;
+}
+#reg_head .logo h1,h2{
+	font-weight:normal;
+	float:left;
+	
+}
+#reg_head .logo h2{
+	line-height:100px;
+	font-size:26px;
+	margin-left:-20px;
+}
+#reg_head .text{
+	height:100%;
+	width:200px;
+}
+#reg_head .text p{
+	line-height:150px;
+	letter-spacing:1px;
+}
+#reg_head .text p mark{
+	background:#fff;
+	padding:5px 15px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	cursor:pointer;
+}
+#reg_head .text p mark:hover{
+	background:#eee
+}
+#line{
+	width:1263px;
+	height:50px;
+	margin:40px auto;
+}
+#line ul li{
+	float:left;
+	width:20%;
+	border-top:2px solid #e5e5e5;
+	text-align:center;
+	position:relative;
+	line-height:50px;
+	font-weight:bold;
+	
+}
+#line ul li p{
+	color:#999;
+	margin-top:5px;
+}
+#line ul li em{
+	position:absolute;
+	background:#e1e1e1;
+	font-style:normal;
+	top:-15px;
+	left:50%;
+	margin:0 0 0 -15px;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	border-radius:50%;
+	color:#fff;
+}
+#myform{
+	width:900px;
+	height:500px;
+	margin:0  0 0 350px;
+	padding:10px 0 0 20px;
+	position:relative;
+}
+#myform form label{
+	position:relative;
+	display:inline-block;
+	margin:0 0 35px 0;
+	color:#555;
+}
+#myform form label i{
+	color:red;
+	vertical-align:middle;
+	font-style:normal;
+	font-size:18px;
+}
+#myform form label input._inp{
+	width:258px;
+	height:35px;
+	border-radius:4px;
+	border:1px solid #ddd;
+	box-shadow:1px 1px 1px #eaeaea;
+	outline:none;
+	text-indent:10px;
+}
+#myform form label input:focus{
+	border:1px solid #0aeded
+}
+#myform form label em.phone,#myform form label em.pass{
+	position:absolute;
+	width:14px;
+	height:21px;
+	top:7px;
+	left:338px;
+}
+#myform form .anquan{
+	font-size:12px;
+	margin:-20px 0 20px 180px;
+	display:inline-block;
+	color:#999;
+}
+#myform form .anquan ul{
+	display:inline-block;
+}
+#myform form .anquan ul li{
+	display:inline-block;
+	background:#ccc;
+	color:#fff;
+	padding:0 12px;
+	font-size:12px;
+}
+#myform span.yzm em{
+	font-style:normal;
+	display:inline-block;
+	margin:0 -10px
+}
+#myform span.yzm em._img{
+	width:175px;
+	height:35px;
+	background:url(../images/ValidCode.png) no-repeat;
+	vertical-align:middle;
+}
+#myform span.yzm em._text{
+	cursor:pointer;
+	color:#0cc;
+}
+#myform form label.checkbox{
+	margin:-20px 0  0 104px;
+	font-size:13px;
+}
+#myform form label.checkbox em{
+	width:13px ;
+	height:13px;
+	border:1px solid #ccc;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:8px;
+}
+#myform form .checkcard{
+	margin:0 0 7px -16px;
+	
+}
+#myform form .checkcard .cardname{
+	margin:15px 0 20px 50px;
+}
+#myform form .checkcard .cardname select{
+	width:259px;
+	border:1px solid #ddd;
+	outline:none;
+	color:#999;
+	font-size:14px;
+	padding:5px 5px 5px 0;
+	border-radius:2px;
+}
+#myform form label.checkbox a:hover{
+	color:red;
+}
+#myform .btn{
+	margin:20px 0 0 104px;
+	background:#ff7800;
+	color:#fff;
+	width:220px;
+	text-align:center;
+	padding:10px 15px;
+	border-radius:4px;
+	font-size:22px;
+	cursor:pointer;
+}
+#myform .btn:hover{
+	background:#f60;
+}
+#reg_foot{
+	width:1263px;
+	border-top:1px solid #eee;
+	margin:110px  auto 0 auto;
+	padding:8px 0 20px 0;
+}
+#reg_foot p{
+	text-align:center;
+	font-size:12px;
+	padding:3px 0 0 0;
+	color:#999;
+}
+
+
+
+
+
+
